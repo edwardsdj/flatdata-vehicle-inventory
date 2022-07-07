@@ -2,7 +2,7 @@
 
 rm inventory.json
 IFS=', ' read -r -a array < dealers.txt
-max_count=10 
+max_count=10000 
 
 for i in ${array[@]:0:max_count}
 
