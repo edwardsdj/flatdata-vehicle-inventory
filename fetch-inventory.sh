@@ -2,8 +2,10 @@
 
 rm inventory.json
 IFS=', ' read -r -a array < dealers.txt
+max_count=10 
 
-for i in ${array[@]}
+for i in ${array[@]:0:max_count}
+
 do
 curl \
   --header "Content-Type: application/json" \
