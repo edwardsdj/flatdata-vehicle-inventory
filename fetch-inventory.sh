@@ -24,7 +24,7 @@ curl \
           "dealers": ["'$i'"]
         }
     }' \
-  https://www.toyota.com/config/services/inventory/search/getInventory | jq '.[:6]' >> raw.jsonl
+  https://www.toyota.com/config/services/inventory/search/getInventory | jq '.' >> raw.jsonl
 done
 
 cat raw.jsonl | jq -s '.' > raw.json | jq -s '.' > inventory.json 
