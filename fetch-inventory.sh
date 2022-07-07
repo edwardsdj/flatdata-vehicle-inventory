@@ -10,6 +10,3 @@ done
 
 cat raw.jsonl | jq -s '.' > raw.json
 rm raw.jsonl
-
-cat inventory.jsonl | jq -s '.[:6]' > inventory.json
-rm inventory.jsonl
