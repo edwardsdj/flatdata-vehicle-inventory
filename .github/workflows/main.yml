@@ -1,7 +1,7 @@
 name: fetch-data
 
 on:
-  push:
+  # push:
   workflow_dispatch:
   # schedule:
     # - cron: '23 11 * * *'
