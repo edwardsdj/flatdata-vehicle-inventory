@@ -48,7 +48,11 @@ do
           created_at: now | strflocaltime("%Y-%m-%d %H:%M:%S")
         }' \
   >> inventory.jsonl
+   | jq '.' raw.jsonl
 done
+
+cat raw.jsonl | jq -s '.' > raw.json
+rm raw.jsonl
 
 cat inventory.jsonl | jq -s '.' > inventory.json
 rm inventory.jsonl
