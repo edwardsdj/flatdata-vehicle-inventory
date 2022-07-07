@@ -18,7 +18,7 @@ do
       "pagestart": 0,
       "filter": {
           "year": [2021, 2022], 
-          "series": ["tacoma", "4runner", "tundra", "rav4"], 
+          "series": ["sienna"], 
           "dealers": ["'$i'"],
           "andfields": ["accessory", "packages", "dealer"]
         }
