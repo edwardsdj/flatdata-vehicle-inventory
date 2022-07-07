@@ -19,8 +19,8 @@ do
       "filter": {
           "year": [2021, 2022], 
           "series": ["sienna"], 
-          "dealers": ["'$i'"]
-#          "andfields": ["accessory", "packages", "dealer"]
+          "dealers": ["'$i'"],
+          "andfields": ["accessory", "packages", "dealer"]
         }
     }' \
   https://www.toyota.com/config/services/inventory/search/getInventory \
