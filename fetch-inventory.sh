@@ -25,5 +25,5 @@ curl \
   https://www.toyota.com/config/services/inventory/search/getInventory | jq '.[:6]' >> raw.jsonl
 done
 
-cat raw.jsonl | jq -s '.' > raw.json
+cat raw.jsonl | jq -s '.' > raw.json | jq -s '.' > inventory.json 
 rm raw.jsonl
