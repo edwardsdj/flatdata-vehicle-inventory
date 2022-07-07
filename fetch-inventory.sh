@@ -47,7 +47,7 @@ do
           packages: .accessories | map(.title) | join(", "),
           created_at: now | strflocaltime("%Y-%m-%d %H:%M:%S")
         }' \
-  >> inventory.jsonl
+  >> inventory.jsonl \
   | jq '.' >> raw.jsonl
 done
 
