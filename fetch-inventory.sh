@@ -17,8 +17,8 @@ do
       "pagesize": 300,
       "pagestart": 0,
       "filter": {
-          "year": [2021, 2022], 
-          "series": ["sienna"], 
+          "year": [2022, 2023], 
+          "series": ["sienna", "sequoia"], 
           "dealers": ["'$i'"],
           "andfields": ["accessory", "packages", "dealer"]
         }
